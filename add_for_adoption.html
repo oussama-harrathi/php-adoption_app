@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adoption Web App - Add an Animal for Adoption</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body class="site-container">
+  <header class="header">
+    <h1 class="header-title">Add an Animal for Adoption</h1>
+  </header>
+
+  <nav class="navigation">
+    <ul class="navigation-menu">
+      <li><a href="index.php" class="navigation-link">Home</a></li>
+      <li><a href="add_for_adoption.html" class="navigation-link active">Add an Animal for Adoption</a></li>
+      <li><a href="about.html" class="navigation-link">About</a></li>
+      <li><a href="contact.php" class="navigation-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <section class="add-animal-section">
+      <h2 class="section-title">Add an Animal for Adoption</h2>
+      <form action="process_add_animal.php" method="post" enctype="multipart/form-data">
+        <label for="animal-image">Animal Image:</label>
+        <input type="file" id="animal-image" name="animal-image" accept="image/*" required>
+
+        <label for="animal-type">Animal Type:</label>
+        <input type="text" id="animal-type" name="animal-type" required>
+
+        <label for="animal-age">Animal Age:</label>
+        <input type="text" id="animal-age" name="animal-age" required>
+
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-info">&copy; 2023 Adoption Web App. All rights reserved. | <a href="privacy.html" class="footer-link">Privacy Policy</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
